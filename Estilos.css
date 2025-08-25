@@ -1,0 +1,457 @@
+/* Reset básico y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: url("img/fondo.png") no-repeat fixed center center/cover;
+    color: #E0E0E0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal para el contenido */
+.contenedor-principal {
+    display: flex;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    gap: 2rem;
+    flex: 1;
+}
+
+/* Columna izquierda (contenido principal) */
+.contenido-izquierdo {
+    flex: 2;
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Columna derecha (imágenes) */
+.contenido-derecho {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.imagen-contenedor {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.imagen-contenedor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 3px solid #ff9e00;
+    margin-bottom: 0.5rem;
+}
+
+.imagen-contenedor p {
+    font-family: "Orbitron", sans-serif;
+    color: #ff9e00;
+    font-size: 0.9rem;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.9);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container {
+    height: 85px;
+}
+
+.logo-img {
+    height: 100%;
+    width: auto;
+    max-width: 150px;
+}
+
+.site-title {
+    font-family: "Orbitron", sans-serif;
+    color: white;
+    font-size: 1.7rem;
+    margin: 0;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.nav-links li {
+    margin-left: 2.4rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+
+/* Estilos del contenido */
+.titulo {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ff0000;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.titulo2 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ff9e00;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.Sub1 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ff9e00;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.parrafo {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto 1.5rem;
+    max-width: 800px;
+}
+
+.Tivid {
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    margin: 2rem 0 1rem;
+    color: #ff9e00;
+    font-size: 1.5rem;
+}
+
+.DesVid {
+    font-size: 1.1rem;
+    margin: 0 auto 1rem;
+    text-align: center;
+    max-width: 800px;
+}
+
+video {
+    box-shadow: 0 0 15px rgba(136, 136, 136, 0.7);
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    background-color: #333;
+}
+
+.TitRan {
+    font-family: "Orbitron", sans-serif;
+    text-align: justify;
+    margin: 2rem 0 1rem;
+    color: #ff9e00;
+    font-size: 1rem;
+}
+
+.ulli {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto 1.5rem;
+    max-width: 800px;
+}
+
+/* Pie de página */
+.simple-footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contenedor-principal {
+        flex-direction: column;
+        padding: 0 1.5rem;
+    }
+
+    .contenido-derecho {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imagen-contenedor {
+        flex: 1 1 300px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .brand-container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .site-title {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 1rem;
+    }
+
+    .parrafo,
+    .DesVid {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .Tivid {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-principal {
+        padding: 0 1rem;
+    }
+
+    .contenido-izquierdo,
+    .imagen-contenedor {
+        padding: 1rem;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .parrafo,
+    .DesVid {
+        font-size: 1rem;
+    }
+}
+
+.Img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+.DesImg {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #E0E0E0;
+}
+
+/*Boton Css*/
+/* Botón flotante */
+.floating-btn-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.floating-btn {
+    width: auto;
+    height: 60px;
+    padding: 0 25px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.floating-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.floating-btn:active {
+    transform: scale(0.98);
+}
+
+/* Panel de referencias flotante */
+.referencias-flotante {
+    width: 400px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: 15px;
+}
+
+.referencias-flotante.visible {
+    max-height: 600px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.referencias-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.referencias-header h3 {
+    margin: 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: transform 0.2s;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+}
+
+.referencias-content {
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.referencias-content ol {
+    padding-left: 25px;
+    margin: 0;
+}
+
+.referencias-content li {
+    padding: 10px 0;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.referencias-content li:last-child {
+    border-bottom: none;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.referencias-flotante.visible {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .referencias-flotante {
+        width: 90vw;
+        right: 5vw;
+    }
+
+    .floating-btn-container {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .floating-btn {
+        padding: 0 20px;
+        font-size: 15px;
+    }
+}
